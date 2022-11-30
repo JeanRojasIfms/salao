@@ -76,7 +76,7 @@
     }
     function remover() {
         $id = $_POST['id'];
-        $url = "https://app-salao2.herokuapp.com/salao".$id;
+        $url = "https://app-salao2.herokuapp.com/salao/".$id;
         //$url = "localhost:8080/salao/".$id;
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
